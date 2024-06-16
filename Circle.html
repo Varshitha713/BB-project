@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url();
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* .avatar {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 50%;
+            margin: 0 auto;
+        } */
+        .avatar{
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            object-fit: fill;
+        }
+
+        .image10 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+            }
+            .avatar{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            }
+            b{
+                font-size: 15px;
+
+            }
+            .image10{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <!-- Add logo at the top left corner -->
+        <img src="Book.jpg" alt="Logo" class="image10" style="position: absolute; top: 10px; left: 10px;">
+        
+        <p style="text-align: center; font-size: 30px;"><b>Flow To The Direction You Love</b></p>
+        <br>
+        <br>
+
+        <div class="image-container">
+            <a href="details.html"><img src="img1.jpg" alt="Avatar" class="avatar"></a>
+            <a href="booksoption.html"><img src="img2.jpg" alt="Avatar" class="avatar"></a>
+        </div>
+    </div>
+</body>
+
+</html>
